@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif !important;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+ul{
+  list-style-type: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.container-formatting {
+  width: 90% !important;
+  margin: 60px 0;
+}
+
+/* NAVBAR */
+.nav--yellow-stripe {
+  width: 100%;
+  height: 25px;
+  background-color: #FFC226;
+  padding:0;
+}
+
+.navbar {
+  width: 100%;
+  height: 90px;
+  background-color: #242424;
+  padding-top: 0;
+}
+
+.navbar .container-fluid {
+  width: 95%;
+  padding-right: 50px;
+}
+
+.navbar h1 {
+  color: white;
+}
+
+.nav--items {
+  color: white;
+  margin: 0;
+}
+
+.nav--items li{
+  display: inline;
+  float: left;
+  font-size: 23px;
+  padding: 0 25px
+}
+
+.container-fluid {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img {
+  background-image: url(./images/main_background.jpeg);
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  /* height: 500px; */
+}
+
+.home-main-content {
+  text-align: center;
+  padding-top: 350px;
+}
+
+.home-page-text {
+  font-size: 60px;
+  color: white;
+}
+
+.home-page-text span{
+  color: #FFC226;
+}
+
+
+.home-main-content button {
+  line-height: 0;
+  margin-top: 10px;
+  padding: 10px 15px;
+  height: 45px;
+  background-color: #FFC226;
+  border: 4px;
+  font-size: 23px;
+  color: white;
+  border-radius: 7px;
+}
+
+
+
+/* PROGRAMS */
+
+.programs {
+  margin-top: 70px;
+}
+
+/* League Cards */
+.leagues .row {
+  margin-top: 30px;
+}
+
+.league_card {
+  width: 70% !important;
+}
+
+.league_card--image {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.league_card--body {
+  text-align: center;
+}
+
+.league_card--title {
+  font-size: 1.75em !important;
+}
+
+/* Tournaments */
+
+.tournament_logo {
+  background-color: antiquewhite;
+  width: 200px;
+  height: 100px;
+}
+
+.tournament_title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.tournament_details {
+  font-size: 20px;
+}
+
+.wide_image {
+  width: 100%;
+  height: 500px;
+}
