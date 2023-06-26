@@ -1,11 +1,6 @@
 body {
   margin: 0;
   font-family: 'Jost', sans-serif !important;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
 
 ul{
@@ -22,6 +17,7 @@ ul{
 
 .title {
   font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .container-formatting {
@@ -114,11 +110,7 @@ ul{
   margin-top: 70px;
 }
 
-/* League Cards */
-.leagues .row {
-  margin-top: 30px;
-}
-
+/* CARDS */
 .league_card {
   width: 70% !important;
 }
@@ -158,4 +150,12 @@ ul{
 .wide_image {
   width: 100%;
   height: 500px;
+}
+
+
+/* Fields */
+.fields--description {
+  margin-bottom: 40px;
+  width: 90%;
+  text-align: justify;
 }

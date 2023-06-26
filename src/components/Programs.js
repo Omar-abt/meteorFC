@@ -2,9 +2,6 @@ import React from "react";
 import CardElem from "./CardElem"
 import leagueData from "../data/leagueData"
 
-import recLeaguePic from "../images/fields/field1.jpeg"
-
-
 
 export default function Programs() {
 
