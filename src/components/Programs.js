@@ -21,7 +21,7 @@ export default function Programs() {
         <div className="programs">
             <div className="leagues">
                 <div className="container-fluid container-formatting">
-                    <h1 className="title">Leagues</h1>
+                    <h1 className="title left-padding">Leagues</h1>
                     <div className="row">
                         {leagueCards}
                     </div>
@@ -31,8 +31,8 @@ export default function Programs() {
 
             <div className="tournaments">
                 <div className="container-fluid container-formatting">
-                    <h1 className="title">Tournaments</h1>
-                    <div className="row">
+                    <h1 className="title left-padding">Tournaments</h1>
+                    <div className="row left-padding">
                         <div className="col-2">
                             <div className="tournament_logo">
                                 <h1 style={{fontSize:"40px"}}>Logo</h1>
@@ -47,7 +47,9 @@ export default function Programs() {
                     </div>               
                 </div>
             </div>
+            
             <div style={{marginBottom:"50px"}}></div>
+
             <div className="container-fluid" style={{padding:"0"}}>
                 <img src= {require("../images/wide_wallpaper.jpeg")} className="wide_image"/>
             </div>
