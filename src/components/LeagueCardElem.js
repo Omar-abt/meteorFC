@@ -1,19 +1,28 @@
 import React from "react";
-import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Modal from 'react-bootstrap/Modal';
 
-export default function FieldModal() {
-        
-    const [show, setShow] = useState(false);
+
+export default function LeagueCardElem(props) {
+
+    const [show, setShow] = React.useState(false);
     
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+
     return (
         <div>
-            <Button variant="primary" onClick={handleShow}>
-                Launch demo modal
-            </Button>
+            <Card style={{ width: '20rem' }} className="league_card">
+                <a onClick={handleShow} className="modal-link">
+                    <Card.Img variant="top" src={require(`../images/${props.img}`)} className="league_card--image" />            
+                    <Card.Body className="league_card--body">
+                    <Card.Title className="league_card--title">{props.title}</Card.Title>
+                    </Card.Body>
+                </a>
+            </Card>
+
       
             <Modal
                 size="lg"
@@ -30,13 +39,11 @@ export default function FieldModal() {
                 <Modal.Body>
                     <h4>Centered Modal</h4>
                     <p>
-                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                    dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                    consectetur ac, vestibulum at eros.
+                    This is a league card
                     </p>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={props.onHide}>Close</Button>
+                    <Button onClick={handleClose}>Close</Button>
                 </Modal.Footer>
             </Modal>
         </div>

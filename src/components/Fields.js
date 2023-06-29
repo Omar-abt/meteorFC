@@ -1,5 +1,5 @@
 import React from "react";
-import CardElem from "./CardElem"
+import FieldCardElem from "./FieldCardElem"
 import fieldData from "../data/fieldData"
 
 export default function Fields() {
@@ -8,9 +8,12 @@ export default function Fields() {
     const fieldCards = fieldData.map(item => {
         return (
             <div className="col" key={item.id}>
-                <CardElem 
+                <FieldCardElem 
                     title={item.title}
                     img={item.img}
+                    description={item.description}
+                    surface={item.surface}
+                    dimensions={item.dimensions}
                 />
             </div>
         );

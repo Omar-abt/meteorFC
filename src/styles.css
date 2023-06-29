@@ -209,3 +209,67 @@ ul{
 .player-card--jersey {
   font-weight: 800;
 }
+
+/* Modals */
+.modal-link{
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.modal-container {
+  padding: 0 !important;
+}
+
+/* League Modals */
+.modal-header {
+  border-bottom: none !important;
+  padding: 25px 25px 10px 25px !important; 
+}
+
+.modal-body {
+  padding: 16px 30px !important; 
+}
+
+.modal-title {
+  font-size: 30px;
+  margin-bottom: 15px !important;
+}
+
+.modal-description {
+  text-align: justify;
+}
+
+.modal-img {
+  width: 93%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.icons {
+  padding-top: 25px; 
+}
+
+.grass-icon {
+  width: 42px;
+  height: 48px;
+  display: block;
+}
+
+.measurement-icon {
+  width: 50px;
+  height: 53px;
+  display: block;
+}
+
+.icons .col-9 {
+  margin-top: 32px;
+}
+
+.icon-desc {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}

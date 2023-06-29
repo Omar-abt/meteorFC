@@ -1,5 +1,5 @@
 import React from "react";
-import CardElem from "./CardElem"
+import LeagueCardElem from "./LeagueCardElem"
 import leagueData from "../data/leagueData"
 
 
@@ -8,7 +8,7 @@ export default function Programs() {
     const leagueCards = leagueData.map(item => {
         return (
             <div className="col" key={item.id}>
-                <CardElem 
+                <LeagueCardElem 
                     title={item.title}
                     img={item.img}
                 />
