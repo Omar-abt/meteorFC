@@ -11,6 +11,7 @@ export default function Programs() {
                 <LeagueCardElem 
                     title={item.title}
                     img={item.img}
+                    description={item.description}
                 />
             </div>
         );

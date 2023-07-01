@@ -31,14 +31,14 @@ export default function FieldCardElem(props) {
                 onHide={handleClose}
                 >
                 <Modal.Header closeButton>
-                    <Modal.Title id="example-custom-modal-styling-title"></Modal.Title>
+                    <Modal.Title className="modal--header"></Modal.Title>
                 </Modal.Header>
-                <Modal.Body closeButton>
+                <Modal.Body className="field-modal--body">
                     <div className="container-fluid modal-container">
                         <div className="row g-0">
                             <div className="col-8">
                                 <div className="modal-img-container">
-                                    <img src={require(`../images/${props.img}`)} className="modal-img" />
+                                    <img src={require(`../images/${props.img}`)} className="field-modal--img" />
                                 </div>
                             </div>
                             <div className="col-4">
@@ -55,8 +55,8 @@ export default function FieldCardElem(props) {
                             </div>
                         </div>
                         
-                        <h4 className="modal-title">{props.title}</h4>                    
-                        <p className="modal-description">{props.description}</p>
+                        <h4 className="field-modal--title">{props.title}</h4>                    
+                        <p className="field-modal--description">{props.description}</p>
                     </div>
                 </Modal.Body>
             </Modal>

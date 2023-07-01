@@ -1,4 +1,5 @@
 import React from "react";
+import { ModalFooter } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
@@ -25,26 +26,27 @@ export default function LeagueCardElem(props) {
 
       
             <Modal
-                size="lg"
+                size="xl"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
                 show={show} 
                 onHide={handleClose}
                 >
-                <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-vcenter">
-                    Modal heading
-                    </Modal.Title>
+                <Modal.Header className="modal-header" closeButton>
+                    
                 </Modal.Header>
-                <Modal.Body>
-                    <h4>Centered Modal</h4>
-                    <p>
-                    This is a league card
-                    </p>
+                <Modal.Body className="league-modal--body">
+                    <div className="container-fluid modal-container"> 
+                        <h4 className="league-modal--title">{props.title}</h4>
+                        <p className="league-modal--description">{props.description}</p>
+                        <img src={require(`../images/${props.img}`)} className="league-modal--img" />
+                    </div>
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button onClick={handleClose}>Close</Button>
-                </Modal.Footer>
+                <ModalFooter className="">
+                <Button variant="warning" className="sign-up-button">
+                    Sign Up
+                </Button>
+                </ModalFooter>
             </Modal>
         </div>
     );

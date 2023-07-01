@@ -94,16 +94,11 @@ ul{
 }
 
 
-.home-main-content button {
-  line-height: 0;
+.main-page-button {
+  color: white !important;
+  font-size: 22px !important;
+  border-radius: 7px !important;
   margin-top: 10px;
-  padding: 10px 15px;
-  height: 45px;
-  background-color: #FFC226;
-  border: 4px;
-  font-size: 23px;
-  color: white;
-  border-radius: 7px;
 }
 
 
@@ -167,6 +162,10 @@ ul{
 }
 
 /* Accordion */
+.accordion-item {
+  width: 98%;
+}
+
 .accordion-body {
   padding-top: 35px !important;
 }
@@ -211,6 +210,10 @@ ul{
 }
 
 /* Modals */
+.modal-content {
+  /* background-color: black !important; */
+}
+
 .modal-link{
   cursor: pointer;
   text-decoration: none;
@@ -221,26 +224,60 @@ ul{
   padding: 0 !important;
 }
 
-/* League Modals */
 .modal-header {
   border-bottom: none !important;
   padding: 25px 25px 10px 25px !important; 
 }
 
-.modal-body {
+.modal-footer {
+  border-top: none !important;
+  padding: 30px 50px 20px 12px !important;
+}
+
+/* League Modals */
+.league-modal--body {
+  padding: 0 30px !important; 
+}
+
+.league-modal--title {
+  font-size: 30px;
+  margin-bottom: 40px !important;
+}
+
+.league-modal--img {
+  width: 60%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.league-modal--description {
+  text-align: justify;
+  width: 90%;
+}
+
+.sign-up-button {
+  color: white !important;
+}
+
+
+/* Field Modals */
+.field-modal--body {
   padding: 16px 30px !important; 
 }
 
-.modal-title {
+.field-modal--title {
   font-size: 30px;
   margin-bottom: 15px !important;
 }
 
-.modal-description {
+.field-modal--description {
   text-align: justify;
 }
 
-.modal-img {
+.field-modal--img {
   width: 93%;
   height: 280px;
   object-fit: cover;
