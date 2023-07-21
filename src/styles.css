@@ -45,9 +45,51 @@ ul{
   padding-top: 0;
 }
 
+.logo {
+  width: 240px;
+}
+
+.navbar-link {
+  /* text-decoration: none;
+  color: white; */
+}
+
+
+.nav--items li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.nav--items li a:after {
+  content: "";
+  position: absolute;
+  background-color: #FFC226;
+  height: 3px;
+  width: 0;
+  left: 1px;
+  bottom: -3px;
+  transition: 0.4s;
+}
+
+.nav--items li a:hover {
+  color: white;
+}
+
+.nav--items li a:hover:after {
+  width: 100%;
+}
+
 .navbar .container-fluid {
-  width: 95%;
-  padding-right: 50px;
+  width: 96%;
+}
+
+.lang-switch {
+  padding-left: 20px;
+}
+
+.lang-switch .MuiFormControlLabel-label {
+  font-size: 19px !important;
 }
 
 .navbar h1 {
@@ -72,11 +114,11 @@ ul{
   background-repeat: no-repeat;
 }
 
-.img {
+.homepage {
   background-image: url(./images/main_background.jpeg);
-  background-position: center;
   height: 100vh;
   width: 100%;
+  scroll-margin-top: 7rem;
 }
 
 .home-main-content {
@@ -87,6 +129,7 @@ ul{
 .home-page-text {
   font-size: 60px;
   color: white;
+  text-shadow: 1px 1px 20px #000000aa;
 }
 
 .home-page-text span{
@@ -107,6 +150,7 @@ ul{
 
 .programs {
   margin-top: 70px;
+  scroll-margin-top: 10.5em;
 }
 
 /* CARDS */
@@ -132,32 +176,43 @@ ul{
 
 /* Tournaments */
 
-.tournament_logo {
-  background-color: antiquewhite;
-  width: 200px;
-  height: 100px;
+.tournament-logo {
+  width: 240px;
 }
 
 .tournament_title {
+  margin-top: 5px;
   margin-bottom: 15px;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .tournament_details {
   font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .wide_image {
   width: 100%;
   height: 500px;
+  object-fit: cover;
+  object-position: 50% 75%;
+}
+
+.tournaments svg {
+  margin-right: 15px;
+  /* width: 30px; */
 }
 
 
 /* Fields */
+.fields {
+  scroll-margin-top: 10.5em;
+}
+
 .fields--description {
   margin-bottom: 40px;
-  width: 90%;
+  width: 97%;
   text-align: justify;
 }
 
@@ -176,10 +231,15 @@ ul{
   font-weight: 400;
 }
 
+/* Team */
+.team {
+  scroll-margin-top: 10.5em;
+}
 
 /* Player Cards */
 .player-card {
   margin: 10px 30px 35px 30px;
+  width: 16% !important;
 }
 
 
@@ -189,7 +249,7 @@ ul{
 }
 
 .player-card--img {
-  max-height: 214px;
+  max-height: 230px;
   object-fit: cover;
   object-position: top;
 }
@@ -244,19 +304,51 @@ ul{
   margin-bottom: 40px !important;
 }
 
+.league-modal--row {
+  margin-bottom: 10px !important;
+  margin-top: 40px !important;
+}
+
 .league-modal--img {
-  width: 60%;
+  width: 92%;
   height: 360px;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 30px;
-  margin-top: 20px;
 }
+
 
 .league-modal--description {
   text-align: justify;
   width: 90%;
 }
+
+.age-icon {
+  width: 45px;
+  height: 48px;
+  display: block;
+  margin: 15px 0;
+}
+
+.skill-level-icon {
+  width: 50px;
+  height: 48px;
+  display: block;
+  margin: 15px 0;
+}
+
+.field-icon {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 15px 0;
+}
+
+.league-icon-desc {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 
 .sign-up-button {
   color: white !important;
@@ -301,7 +393,7 @@ ul{
   display: block;
 }
 
-.icons .col-9 {
+.icons .field-icon-desc-col {
   margin-top: 32px;
 }
 
@@ -309,4 +401,206 @@ ul{
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 500;
+}
+
+
+/* Contact us */
+.contact {
+  scroll-margin-top: 10.5em;
+}
+
+.map-container {
+  width: 100%;
+  height: 600px;
+}
+
+.contact-item-container {
+  padding-left: 5.5% !important;
+  margin-bottom: 12% !important;
+}
+
+.contact-item-title {
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.contact-item-item {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.message-row {
+  background-color: #e2e2e2;
+}
+
+.message-container {
+  width: 40% !important;
+  margin: 30px auto !important;
+  padding: 30px 0 40px 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 5px 20px #bdbdbd;
+}
+
+.contact-form-title {
+  padding-left: 17.5%;
+}
+
+.contact-form--label {
+  color: #646464;
+  margin: 25px 0 6px 3px !important;
+}
+
+.contact-form--input {
+  padding: 15px 10px !important;
+  border: 1px solid rgba(69, 69, 69, 0.388) !important;
+}
+
+.contact-form--group {
+  margin: 0 auto !important;
+  width: 65% !important;
+}
+
+.contact-submit-button {
+  margin-top: 5%;
+  width: 12vh;
+  margin-left: 17.6%;
+  color: white !important;
+  font-size: 18px !important;
+}
+
+
+/* Gallery */
+.gallery {
+  scroll-margin-top: 9.5em;
+}
+
+.gallery-col {
+  margin: 12px 0;
+}
+
+.gallery-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Search */
+.search {
+  scroll-margin-top: 2em;
+}
+
+.filters-col {
+  position: sticky;
+  top: 175px;
+}
+
+/* Seacrh card */
+.search-card-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.search-card {
+  width: 33.3333% !important;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.search-card--img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.search-card--title {
+  margin: 15px 0 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.search-card--desc {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #5d5d5d;
+}
+
+.search-form-group {
+  margin: 20px 0 0 0;
+}
+
+.search-form {
+  width: 75% !important;
+}
+
+.search-form-label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* Signup Modal */
+.signup-modal--title {
+  font-size: 30px;
+  margin-bottom: 40px !important;
+  text-align: center;
+}
+
+.signup-modal--body {
+  padding: 0 30px !important; 
+}
+
+.signup-form--label {
+  color: #646464;
+  margin: 25px 0 6px 3px !important;
+}
+
+.signup-form--input {
+  padding: 15px 10px !important;
+  border: 1px solid rgba(69, 69, 69, 0.388) !important;
+}
+
+.signup-form--group {
+  margin: 0 auto !important;
+  width: 45% !important;
+}
+
+.error-message {
+  font-size: 14px;
+  margin-top: 7px;
+  padding-left: 3px;
+  color: red;
+  display: none;
+}
+
+.signup-form--input:invalid ~ .error-message {
+  display: block;
+}
+
+.contact-form--input:invalid ~ .error-message {
+  display: block;
+}
+
+.sign-up-submit-button {
+  float: right;
+  margin-right: 3.5%;
+  margin-top: 5%;
+  color: white !important;
+  font-size: 18px !important;
+}
+
+/* Confirmation Modal */
+.modal-container-confirmation {
+  text-align: center;
+}
+
+.confirmation-icon {
+  width: 18%;
+  margin-bottom: 20px;
+}
+
+.confirmation-modal-text {
+  font-size: 21px;
+  margin: 8px 0 0 0;
 }

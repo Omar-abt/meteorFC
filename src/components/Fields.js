@@ -23,7 +23,7 @@ export default function Fields() {
 
 
     return (
-        <div className="fields">
+        <div className="fields" id="fields-section">
             <div className="container-fluid container-formatting">
                 <div className="row">
                     <h1 className="title left-padding">Our Fields</h1>

@@ -1,0 +1,10 @@
+{
+    "short_name": "Meteor FC",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "64x64 32x32 24x24 12x12",
+            "type": "image/x-icon"
+        }
+    ]
+}

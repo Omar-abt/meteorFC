@@ -33,7 +33,7 @@ export default function Team() {
 
 
     return (
-        <div className="team">
+        <div className="team" id="team-section">
             <div className="team-roster">
                 <div className="container-fluid container-formatting">
                     <div className="row">
@@ -79,6 +79,14 @@ export default function Team() {
                     </div>
                 </div>
             </div>
+
+            <div style={{marginBottom:"150px"}}></div>
+
+            <div className="container-fluid" style={{padding:"0"}}>
+                <img src= {require("../images/wide_wallpaper3.jpeg")} alt="Dividing wallpaper" className="wide_image"/>
+            </div>
+
+            <div style={{marginBottom:"100px"}}></div>
         </div>
     );
 }

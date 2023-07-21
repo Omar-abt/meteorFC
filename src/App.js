@@ -1,20 +1,25 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from "./components/Navbar";
-import Body from "./components/Body";
-import Leagues from "./components/Programs";
-import Fields from "./components/Fields"
-import Team from "./components/Team"
+
+import Home from "./components/Home";
+import Search from "./components/Search";
 
 function App() {
+
+  const [french, setFrench] = React.useState(false);
+
+  function handleLanguageToggle() {
+    setFrench(prevLangState => !prevLangState)
+  }
+
   return (
-    <div>
-      <Navbar />
-      <Body />
-      <Leagues />
-      <Fields />
-      <Team />
-    </div>
+    <Router basename="/">
+      <Routes>
+        <Route path="/meteorFC" element={<Home french={french} changeLanguage={handleLanguageToggle} />} />
+        <Route path="/search" element={<Search french={french} changeLanguage={handleLanguageToggle}/>} />
+      </Routes>
+    </Router>
   );
 }
 
