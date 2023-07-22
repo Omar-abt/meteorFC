@@ -10,7 +10,6 @@ export default function Navbar(props) {
             <nav className="navbar" role="navigation">
                 <div className="container-fluid">
                     <div>
-                        {/* <h1 className="no-margin">Logo</h1> */}
                         <a href="/meteorFC#home-section">
                             <img src={require("../images/logo/logo1.png")} alt="Logo-picture" className="logo"/>
                         </a>                        
@@ -41,6 +40,5 @@ export default function Navbar(props) {
         </div>
          
     );
-    // <div className="nav--yellow-stripe"></div>
 }
 

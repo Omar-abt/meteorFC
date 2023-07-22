@@ -37,11 +37,6 @@ export default function ProgramSearchCard(props) {
                     show={Confirmationshow}
                     handleClose={handleConfirmationClose}
                 />
-
-                {/* <ConfirmModal
-                    show={show}
-                    handleClose={handleClose}
-                /> */}
             </div>
     );
 }
