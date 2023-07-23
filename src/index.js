@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './styles.css';
 import App from './App';
 
-import Navbar from "./components/Navbar"
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
