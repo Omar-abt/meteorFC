@@ -1,6 +1,6 @@
 import React from "react";
 
-import Map from "./Map"
+// import Map from "./Map"
 import ContactUsForm from "./ContactUsForm"
 
 export default function Contact() {
@@ -27,7 +27,7 @@ export default function Contact() {
                     </div>
                     <div className="col-8">
                         <div className="map-container">
-                            <Map />
+                            {/* <Map /> */}
                         </div>
                     </div>
                 </div>

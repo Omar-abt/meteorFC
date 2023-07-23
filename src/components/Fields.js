@@ -19,8 +19,6 @@ export default function Fields() {
         );
     });
 
-    console.log(fieldData);
-
 
     return (
         <div className="fields" id="fields-section">
